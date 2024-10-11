@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <meta name="description" content="Fill out this student registration form to apply for courses and provide your personal information.">
+    <meta name="keywords" content="student registration, form, courses, education, apply, personal information">
+    <style>
+        /* Basic styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            text-align: left;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th:nth-child(1) {
+            width: 50%;
+        }
+
+        input[type="text"], input[type="date"], input[type="email"], select, textarea {
+            width: 90%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h3>Student Registration Form</h3>
+    <form action="" method="POST">
+        <table>
+            <!-- First Name -->
+            <tr>
+                <th><label for="first_name">Enter your first name:</label></th>
+                <th><input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required></th>
+            </tr>
+
+            <!-- Last Name -->
+            <tr>
+                <th><label for="last_name">Enter your last name:</label></th>
+                <th><input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required></th>
+            </tr>
+
+            <!-- Mother's Name -->
+            <tr>
+                <th><label for="mother_name">Enter your mother's name:</label></th>
+                <th><input type="text" id="mother_name" name="mother_name" placeholder="Enter your mother's name" required></th>
+            </tr>
+
+            <!-- Date of Birth -->
+            <tr>
+                <th><label for="dob">Enter your date of birth:</label></th>
+                <th><input type="date" id="dob" name="dob" required></th>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <th><input type="email" id="email" name="email" placeholder="xxxxxx@gmail.com" required></th>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <th><label for="gender">Gender:</label></th>
+                <th>
+                    <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label>
+                </th>
+            </tr>
+
+            <!-- Courses -->
+            <tr>
+                <th><label for="course">Choose your course:</label></th>
+                <th>
+                    <select id="course" name="course" required>
+                        <option value="">--Select a course--</option>
+                        <option value="bangla">Bangla</option>
+                        <option value="english">English</option>
+                        <option value="ip">Information Technology</option>
+                        <option value="math">Mathematics</option>
+                    </select>
+                </th>
+            </tr>
+
+            <!-- Hobbies -->
+            <tr>
+                <th><label for="hobbies">Your hobbies:</label></th>
+                <th>
+                    <input type="checkbox" id="gardening" name="hobbies" value="gardening"> <label for="gardening">Gardening</label>
+                    <input type="checkbox" id="cricket" name="hobbies" value="cricket"> <label for="cricket">Cricket</label>
+                    <input type="checkbox" id="watch_tv" name="hobbies" value="watch_tv"> <label for="watch_tv">Watch TV</label>
+                </th>
+            </tr>
+
+            <!-- Comments -->
+            <tr>
+                <th><label for="comments">Comments:</label></th>
+                <th><textarea id="comments" name="comments" placeholder="Enter your comments"></textarea></th>
+            </tr>
+
+            <!-- File Upload -->
+            <tr>
+                <th><label for="file">Upload a document (if required):</label></th>
+                <th><input type="file" id="file" name="file"></th>
+            </tr>
+
+            <!-- Submit Button -->
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="Submit">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
